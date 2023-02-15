@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,300;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600&family=Montserrat:wght@300;400;600&display=swap');
 *,
 ::after,
 ::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
 }
 
 body {
-    font-family: "Playfair Display", serif;
+    font-family: "Darker Grotesque", serif;
     background: #F3EEEE;
+
 }
 
 h1 {
@@ -23,14 +22,20 @@ h1 {
 .header {
     width: 100vh;
     height: 500px;
-    position: fixed;
+    position: absolute;
     text-align: center;
     transform-origin: left top;
     transform: rotate(-90deg) translateX(-100%);
 }
 
-
 #logo {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
     color: #000;
+}
+
+.daily-tasks {
+    display: grid;
+    justify-content: center;
+    max-width: 40rem;
+    position: relative;
 }
