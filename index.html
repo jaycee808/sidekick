@@ -11,17 +11,30 @@
         <link rel="icon" type="icon" href="./images/pen-to-square-solid.svg">
     </head>
     <body>
+        <div id="wrapper">
         <header class="header">
                 <h1 id="logo">SIDEKICK.</h1>
                 <h2 id="currentDay"></h2>
         </header>
         
-        <!-- <div id="dateDisplay">
-            <h2 id="currentDay"></h2>
-            <h2 id="currentTime"></h2>
-        </div> -->
-        <section class="daily-tasks">
-        </section>
+        
+        <div class="daily-tasks">
+            <!-- form -->
+            <form class="task-form">
+                <p class="alert"></p>
+                    <h3>daily tasks.</h3>
+                        <div class="form-control">
+                            <input type="text" id="task" placeholder="insert task." />
+                            <button type="submit" class="submit-btn">submit</button>
+                        </div>
+            </form>
+            <!-- list -->
+            <div class="task-container">
+            <div class="task-list"></div>
+                <button class="clear-btn">clear items</button>
+            </div>
+            </div>
+        </div>
         <!-- javascript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
