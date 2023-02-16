@@ -1,5 +1,7 @@
 // variables for current day and time
-var currentDay = moment().format('dddd Do MMMM');
+var currentDate = moment().format('Do MMMM');
+var dayOfTheWeek = moment().format('dddd');
 
 // display current date and time to the screen
-$('#currentDay').append(currentDay);
+$('#currentDay').append(currentDate);
+$('#dayOfTheWeek').append(dayOfTheWeek.toLowerCase());
