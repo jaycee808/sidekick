@@ -7,19 +7,64 @@
     box-sizing: border-box;
 }
 
-#navbar {
-    text-align: center;
+#logo {
+    font-family: 'Darker Grotesque', sans-serif;
+    color: #000;
+    font-size: 6rem;
 }
 
 #wrapper {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1rem 1rem;
-    grid-template-rows: 1rem 1rem;
-    padding: 2rem;
-    
+    grid-template-columns: 260px 260px 260px 260px;
+    grid-template-rows: 50px 50px 50px;
 }
 
+.sidebar {
+    width: 60vh;
+    height: 10vh;
+    text-align: center;
+    transform-origin: left top;
+    transform: rotate(-90deg) translateX(-100%);
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    margin-right: 0;
+    padding: 0;
+}
+
+.daily-tasks {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    #wrapper {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 40px 60px 60px 40px;
+        grid-template-rows: 25px 25px 25px;
+        margin: 0;
+    }
+
+    .daily-tasks {
+        display: grid;
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    .sidebar {
+        width: 60vh;
+        text-align: center;
+        transform: rotate(-90deg) translateX(-100%);
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+.navbar {
+    text-align: center;
+}
 body {
     font-family: "Darker Grotesque", serif;
     background: #f3f2ee;
@@ -42,35 +87,15 @@ h4 {
 }
 
 hr {
-    border-top: 1px solid #000;
-    width: 100%;
+    border-top: 3px solid #000;
+    width: 60vh;
 }
 /* header */
 
-.sidebar {
-    width: 60vh;
-    height: 10vh;
-    position: absolute;
-    text-align: center;
-    transform-origin: left top;
-    transform: rotate(-90deg) translateX(-100%);
-    grid-column: 1;
-    grid-row: 1 / span 2;
-}
 
-#logo {
-    font-family: 'Darker Grotesque', sans-serif;
-    color: #000;
-}
 
-.daily-tasks {
-    display: grid;
-    grid-column: 4;
-    grid-row: 1;
-}
-
-.weekly-tasks {
+/* .weekly-tasks {
     display: grid;
     grid-column: 5;
     grid-row: 1;
-}
+} */

@@ -11,12 +11,11 @@
         <link rel="icon" type="icon" href="./images/pen-to-square-solid.svg">
     </head>
     <body>
-        <nav id="navbar">
+        <nav class="navbar">
             <h1 id="logo">sidekick.</h1>
         </nav>
-
+        <div id="grid">
         <div id="wrapper">
-
         <header class="sidebar">
                 <h2 id="dayOfTheWeek"></h2>
                 <h4 id="currentDay"></h4>
@@ -24,8 +23,7 @@
                 <hr>
         </header>
         
-        
-        <div class="daily-tasks">
+        <div class="daily-tasks"> 
             <!-- form -->
             <form class="task-form">
                 <p class="alert"></p>
@@ -37,29 +35,29 @@
             </form>
             <!-- list -->
             <div class="task-container">
-            <div class="task-list"></div>
-                <button class="clear-btn">clear items</button>
+                <div class="task-list"></div>
+                    <button class="clear-btn">clear items</button>
+                </div>
             </div>
-            
-            </div>
-            
-            <div class="weekly-tasks">
+        </div>
+    </div>
+            <!-- <div class="weekly-tasks"> -->
                 <!-- form -->
-                <form class="task-form">
+                <!-- <form class="task-form">
                     <p class="alert"></p>
                         <h3>this week.</h3>
                             <div class="form-control">
                                 <input type="text" id="task" placeholder="insert task." />
                                 <button type="submit" class="submit-btn">submit</button>
                             </div>
-                </form>
+                </form> -->
                 <!-- list -->
-                <div class="task-container">
+                <!-- <div class="task-container">
                 <div class="task-list"></div>
                     <button class="clear-btn">clear items</button>
                 </div>
                 </div>
-        </div>
+            </div> -->
         <!-- javascript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
