@@ -26,6 +26,7 @@ body {
     grid-template-rows: 50px 50px 50px; */
     display: flex;
     justify-content: center;
+    height: 55vh;
 
 }
 
@@ -96,6 +97,10 @@ h4 {
     font-size: 1.8rem;
 }
 
+h5 {
+    font-size: 1.2rem;
+}
+
 hr {
     border-top: 3px solid #000;
     width: 60vh;
@@ -112,3 +117,16 @@ hr {
     grid-column: 5;
     grid-row: 1;
 } */
+
+
+.footer {
+    text-align: center;
+    height: 50px;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #77ACF1;
+    color: #000;
+    border-top: 3px solid #000;
+}
