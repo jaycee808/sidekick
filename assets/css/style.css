@@ -1,84 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600&family=Montserrat:wght@300;400;600&display=swap');
-*,
-html {
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    margin-left: 1em;
-    margin-right: 1em;
-    border: 3px solid #000;
-}
-
-#logo {
-    font-family: 'Darker Grotesque', sans-serif;
-    color: #000;
-    font-size: 6rem;
-    font-weight: bold;
-}
-
-#wrapper {
-    /* display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 260px 260px 260px 260px;
-    grid-template-rows: 50px 50px 50px; */
-    display: flex;
-    justify-content: center;
-    height: 55vh;
-
-}
-
-/* .sidebar {
-    width: 60vh;
-    height: 10vh;
-    text-align: center;
-    transform-origin: left top;
-    transform: rotate(-90deg) translateX(-100%);
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    margin-right: 0;
-    padding: 0;
-} */
-
-/* .daily-tasks {
-    border: 3px solid #000;
-} */
-
-/* @media only screen and (max-width: 600px) {
-    #wrapper {
-        display: grid;
-        grid-gap: 5px;
-        grid-template-columns: 40px 60px 60px 40px;
-        grid-template-rows: 25px 25px 25px;
-        margin: 0;
-    }
-
-    .daily-tasks {
-        display: grid;
-        grid-column: 4;
-        grid-row: 1;
-    }
-
-    .sidebar {
-        width: 60vh;
-        text-align: center;
-        transform: rotate(-90deg) translateX(-100%);
-        grid-column: 1;
-        grid-row: 1;
-    }
-} */
-
-.navbar {
-    text-align: center;
-    /* background-color: #01009A; */
-    background-color: #77ACF1;
-    /* background-color: #3EDBF0; */
-}
-body {
-    font-family: "Darker Grotesque", serif;
-    background: #f3f2ee;
 }
 
 h1 {
@@ -106,25 +31,56 @@ hr {
     width: 60vh;
 }
 
+body {
+    font-family: "Darker Grotesque", serif;
+    background: #f3f2ee;
+    margin-left: 1em;
+    margin-right: 1em;
+    border: 3px solid #000;
+}
+
+.navbar {
+    text-align: center;
+    /* background-color: #01009A; */
+    background-color: #77ACF1;
+    /* background-color: #3EDBF0; */
+}
+
+#logo {
+    font-family: 'Darker Grotesque', sans-serif;
+    color: #000;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
 #date {
     text-align: center;
     background-color: #000;
     color: #FFF;
 }
 
-/* .weekly-tasks {
-    display: grid;
-    grid-column: 5;
-    grid-row: 1;
-} */
+#wrapper {
+    display: flex;
+    justify-content: center;
+    /* margin-left: 1em;
+    margin-right: 1em; */
+    /* border: 3px solid #000; */
+}
 
+.tasks {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 60dvh;
+    width: 100dvw;
+}
 
 .footer {
     text-align: center;
-    height: 50px;
-    /* position: fixed; */
+    position: absolute;
     left: 0;
     bottom: 0;
+    height: 10dvh;
     width: 100%;
     background-color: #77ACF1;
     color: #000;
