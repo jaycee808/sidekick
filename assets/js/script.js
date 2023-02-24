@@ -11,7 +11,7 @@ const todoInput = document.querySelector("#todo-text");
 const todoForm = document.querySelector("#todo-form");
 const todoList = document.querySelector("#todo-list");
 
-let todos = JSON.parse(localStorage.getItem("todos")) || ["Learn HTML", "Learn CSS", "Learn JavaScript"];
+let todos = JSON.parse(localStorage.getItem("todos")) || ["Do dishes", "Go to bed"];
 
 const storeTodos = () => {
   localStorage.setItem("todos", JSON.stringify(todos));
@@ -72,5 +72,5 @@ todoList.addEventListener("click", (event) => {
 // Attach event listener to the todo form
 todoForm.addEventListener("submit", addTodo);
 
-// Initialize the app
+// Initialise the app
 renderTodos();
