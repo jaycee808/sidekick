@@ -137,3 +137,10 @@ button {
     max-width: 100%;
     align-self: center;
 }
+
+@media only screen and (max-width: 800px) {
+    
+    #vertical-text {
+        display: none;
+    }
+}
