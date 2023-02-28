@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
         <link rel="icon" type="icon" href="./images/pen-to-square-solid.svg">
     </head>
+
+<div class="wrapper">
     <div>
         <nav class="navbar">
             <h1 id="logo">sidekick.</h1>
@@ -18,60 +20,24 @@
     <div id="date">
         <h2 id="currentDate"></h2>
     </div>
-    <!-- task list style one -->
-    <!-- <div id="wrapper">
-        <div class="tasks"> 
-            <form class="task-form">
-                <p class="alert"></p>
-                    <h3>today.</h3>
-                        <div class="form-control">
-                            <input type="text" id="task" placeholder="insert task."/>
-                            <button type="submit" class="submit-btn">submit</button>
-                            <button class="clear-btn">clear item</button>
-                        </div>
-            </form>
-            <div class="task-container">
-                <div class="task-list">
-                </div>
-            </div>
-                <footer class="footer">
-                    <h5>SIDEKICK. COPYRIGHT © 2023</h5>
-                </footer>
-        </div>
-    </div> -->
 
-    <!-- task list style three -->
-    <div class="todos" id="wrapper">
+    <!-- task list -->
+    <div class="todos">
         <form id="todo-form" method="POST">
             <div class="tasks">
-                <h3>today's agenda.</h3>
+                <h2>today's agenda.</h2>
                 <label for="todo-text">add task:</label>
                 <input type="text" placeholder="What needs to be done?" name="todo-text" id="todo-text" />
                 <ul id="todo-list"></ul>
                 <!-- <button class="button" role="button">Button</button> -->
-        </div>
+            </div>
         </form>
-
     </div>
 
-    <!-- task list style two -->
-    <!-- <div id="wrapper">
-        <div> 
-            <div class="tasks">
-                <h3>today's agenda.</h3>
-                <hr> 
-                <button class="add-task" type="button">add a new task.</button>
-            </div>
-    
-                <footer class="footer">
-                    <h5>SIDEKICK. COPYRIGHT © 2023</h5>
-                </footer>
-        </div>
-    </div> -->
     <footer class="footer">
         <h5>SIDEKICK. COPYRIGHT © 2023</h5>
     </footer>
-
+</div>
         <!-- javascript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
