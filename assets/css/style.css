@@ -81,6 +81,22 @@ html, body {
 }
 
 /* Task List Styles */
+
+.add-task {
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 1rem;
+    color: #000;
+}
+
+#todo-text {
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    
+}
+
 .todos {
     height: 60dvh;
     border: 3px solid #000;
@@ -92,6 +108,19 @@ html, body {
 
 .tasks {
     font-size: 2.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#todo-list {
+    justify-content: space-between;
+}
+
+#todo-list button {
+    background-color: #77ACF1;
+    color: #000;
+    border: 2px solid #000;
+    margin-left: 20px;
 }
 
 /* Footer Styles */
@@ -109,21 +138,17 @@ html, body {
 /* Button Styles */
 button {
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: 1.5rem;
-    background-color: #000;
-    border: 1px solid #222;
-    color: #FFF;
+    font-size: 0.8rem;
+    background-color: #FFF;
+    color: #000;
     cursor: pointer;
-    width: auto;
     display: inline-block;
-    font-weight: 600;
-    line-height: 20px;
-    margin: 0;
-    padding: 13px 23px;
-    position: relative;
+    font-weight: 800;
+    padding: 0.8rem;
     text-align: center;
     text-decoration: none;
-    border-radius: 10px;
+    border: 2px solid #000;
+    border-radius: 12px;
 }
 /* vertical text style */
 

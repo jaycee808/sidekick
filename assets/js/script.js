@@ -11,7 +11,7 @@ const todoInput = document.querySelector("#todo-text");
 const todoForm = document.querySelector("#todo-form");
 const todoList = document.querySelector("#todo-list");
 
-let todos = JSON.parse(localStorage.getItem("todos")) || ["Do dishes", "Go to bed"];
+let todos = JSON.parse(localStorage.getItem("todos")) || ["Buy apples", "Buy toothpaste"];
 
 const storeTodos = () => {
   localStorage.setItem("todos", JSON.stringify(todos));
